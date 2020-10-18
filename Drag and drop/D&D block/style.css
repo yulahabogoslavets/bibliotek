@@ -1,0 +1,14 @@
+
+.drag_el{
+    width: 50px;
+    height: 50px;
+    background: rebeccapurple;
+}
+
+.drop_zone{
+    width: 200px;
+    height: 200px;
+    border: 1px dotted black;
+    margin: 20px auto;
+
+}
