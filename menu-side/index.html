@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>menu</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords" content="">
+<link href="style.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+<body>
+	<nav class="top-nav">
+		<a href="#" class="menu-icon" onclick="showSideMenu()"></a>
+		<a href="#" class="nav-item">Home</a>
+		<a href="#" class="nav-item">Prise</a>
+		<a href="#" class="nav-item">News</a>
+		<a href="#" class="nav-item">Contact</a>
+	</nav>
+	<div id="side-menu" class="side-nav">
+		<a href="#" class="close" onclick="hideSideMenu()">&times;</a>
+		<a href="#">Home</a>
+		<a href="#">Prise</a>
+		<a href="#">News</a>
+		<a href="#">Contact</a>
+	</div>
+	<script>
+		function showSideMenu() {
+			document.getElementById('side-menu').style.width = '250px';
+		}
+		function hideSideMenu() {
+			document.getElementById('side-menu').style.width = '0';
+		}
+	</script>
+</body>
+</html>

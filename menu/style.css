@@ -1,0 +1,62 @@
+ *{
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+ }
+
+body{
+  font-size:16px;
+}
+
+.menu{
+  background: green;
+}
+.menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.menu ul li{
+  padding-left: 1em;
+}
+
+.mobile{
+  display: none;
+}
+
+
+
+
+@media screen and (max-width: 768px){
+  .mobile{
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin-left: 1em;
+  }
+
+  .menu ul {
+    display: none;
+  }
+
+  .menu .mobile::before {
+    content: url("menu.svg");
+  }
+
+  .menu.open .mobile::before {
+    content: url("close.svg");
+  }
+
+  .menu.open ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .menu ul li:last-child{
+    margin-bottom: 1em;
+  } 
+}
