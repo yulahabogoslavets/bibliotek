@@ -1,0 +1,44 @@
+<!Doctype>
+<html>
+	<head>
+		<link href="style.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="container">
+			<!--<div class="block-img">
+				<img src="img/play.svg" alt="play" id="block-img_play">
+			</div>-->
+			<div class="c-video">
+				<!--<video class="video" src="video.mp4"></video>-->
+				<video class="video" src="videoWithSound.mp4"></video>
+				<div class="controls">
+					<div id="progress-bar">
+						<div class="orange-juice"></div>
+					</div>
+
+					<!--
+					<progress id="progress-bar" min="0" max="100" value="0">0%played</progress>
+-->
+					<!--Play/Pause button-->
+					<div class="buttons">
+						<button id="play-pause"></button>
+					</div>
+					<!--Current time-->
+					<div class="time">
+						<span id="currentTime"></span> <span id="durTime"></span>
+					</div>
+					<!--Volume -->
+					<button id="muteBtn">Mute</button>
+					<input type="range" id="soundVolume" name="volume" min="0" max="100" value="100" step="1"/>
+
+					<button id="speedUp">Speed Up</button>
+					<button id="speedDown">Speed Down</button>
+					<!--Fullscreen-->
+					<button id="fullScreenBtn">[ &nbsp;]</button>
+				</div>
+			</div>
+		</div>
+
+		<script src="video.js"></script>
+	</body>
+</html>
